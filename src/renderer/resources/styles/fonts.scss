@@ -1,0 +1,243 @@
+@font-face {
+  font-family: 'Jeju Hallasan';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../renderer/resources/fonts/JejuHallasan-Regular.eot");
+  src: url("../renderer/resources/fonts/JejuHallasan-Regular.eot?#iefix") format('embedded-opentype'), url("../renderer/resources/fonts/JejuHallasan-Regular.woff2") format('woff2'), url("../renderer/resources/fonts/JejuHallasan-Regular.woff") format('woff');
+}
+@font-face {
+  font-family: 'KoPub Batang';
+  font-style: normal;
+  font-weight: 300;
+  src: url("../renderer/resources/fonts/KoPubBatang-Light.eot");
+  src: url("../renderer/resources/fonts/KoPubBatang-Light.eot?#iefix") format('embedded-opentype'), url("../renderer/resources/fonts/KoPubBatang-Light.woff2") format('woff2'), url("../renderer/resources/fonts/KoPubBatang-Light.woff") format('woff');
+}
+@font-face {
+  font-family: 'KoPub Batang';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../renderer/resources/fonts/KoPubBatang-Regular.eot");
+  src: url("../renderer/resources/fonts/KoPubBatang-Regular.eot?#iefix") format('embedded-opentype'), url("../renderer/resources/fonts/KoPubBatang-Regular.woff2") format('woff2'), url("../renderer/resources/fonts/KoPubBatang-Regular.woff") format('woff');
+}
+@font-face {
+  font-family: 'KoPub Batang';
+  font-style: normal;
+  font-weight: 700;
+  src: url("../renderer/resources/fonts/KoPubBatang-Bold.eot");
+  src: url("../renderer/resources/fonts/KoPubBatang-Bold.eot?#iefix") format('embedded-opentype'), url("../renderer/resources/fonts/KoPubBatang-Bold.woff2") format('woff2'), url("../renderer/resources/fonts/KoPubBatang-Bold.woff") format('woff');
+}
+@font-face {
+  font-family: 'Nanum Gothic';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../renderer/resources/fonts/NanumGothic-Regular.eot");
+  src: url("../renderer/resources/fonts/NanumGothic-Regular.eot?#iefix") format('embedded-opentype'), url("../renderer/resources/fonts/NanumGothic-Regular.woff2") format('woff2'), url("../renderer/resources/fonts/NanumGothic-Regular.woff") format('woff');
+}
+@font-face {
+  font-family: 'Nanum Gothic';
+  font-style: normal;
+  font-weight: 700;
+  src: url("../renderer/resources/fonts/NanumGothic-Bold.eot");
+  src: url("../renderer/resources/fonts/NanumGothic-Bold.eot?#iefix") format('embedded-opentype'), url("../renderer/resources/fonts/NanumGothic-Bold.woff2") format('woff2'), url("../renderer/resources/fonts/NanumGothic-Bold.woff") format('woff');
+}
+@font-face {
+  font-family: 'Nanum Gothic';
+  font-style: normal;
+  font-weight: 800;
+  src: url("../renderer/resources/fonts/NanumGothic-ExtraBold.eot");
+  src: url("../renderer/resources/fonts/NanumGothic-ExtraBold.eot?#iefix") format('embedded-opentype'), url("../renderer/resources/fonts/NanumGothic-ExtraBold.woff2") format('woff2'), url("../renderer/resources/fonts/NanumGothic-ExtraBold.woff") format('woff');
+}
+@font-face {
+  font-family: 'Nanum Gothic Coding';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../renderer/resources/fonts/NanumGothicCoding-Regular.eot");
+  src: url("../renderer/resources/fonts/NanumGothicCoding-Regular.eot?#iefix") format('embedded-opentype'), url("../renderer/resources/fonts/NanumGothicCoding-Regular.woff2") format('woff2'), url("../renderer/resources/fonts/NanumGothicCoding-Regular.woff") format('woff');
+}
+@font-face {
+  font-family: 'Nanum Gothic Coding';
+  font-style: normal;
+  font-weight: 700;
+  src: url("../renderer/resources/fonts/NanumGothicCoding-Bold.eot");
+  src: url("../renderer/resources/fonts/NanumGothicCoding-Bold.eot?#iefix") format('embedded-opentype'), url("../renderer/resources/fonts/NanumGothicCoding-Bold.woff2") format('woff2'), url("../renderer/resources/fonts/NanumGothicCoding-Bold.woff") format('woff');
+}
+@font-face {
+  font-family: 'Nanum Myeongjo';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../renderer/resources/fonts/NanumMyeongjo-Regular.eot");
+  src: url("../renderer/resources/fonts/NanumMyeongjo-Regular.eot?#iefix") format('embedded-opentype'), url("../renderer/resources/fonts/NanumMyeongjo-Regular.woff2") format('woff2'), url("../renderer/resources/fonts/NanumMyeongjo-Regular.woff") format('woff');
+}
+@font-face {
+  font-family: 'Nanum Myeongjo';
+  font-style: normal;
+  font-weight: 600;
+  src: url("../renderer/resources/fonts/NanumMyeongjo-Bold.eot");
+  src: url("../renderer/resources/fonts/NanumMyeongjo-Bold.eot?#iefix") format('embedded-opentype'), url("../renderer/resources/fonts/NanumMyeongjo-Bold.woff2") format('woff2'), url("../renderer/resources/fonts/NanumMyeongjo-Bold.woff") format('woff');
+}
+@font-face {
+  font-family: 'Nanum Myeongjo';
+  font-style: normal;
+  font-weight: 700;
+  src: url("../renderer/resources/fonts/NanumMyeongjo-ExtraBold.eot");
+  src: url("../renderer/resources/fonts/NanumMyeongjo-ExtraBold.eot?#iefix") format('embedded-opentype'), url("../renderer/resources/fonts/NanumMyeongjo-ExtraBold.woff2") format('woff2'), url("../renderer/resources/fonts/NanumMyeongjo-ExtraBold.woff") format('woff');
+}
+@font-face {
+  font-family: 'Nanum Pen Script';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../renderer/resources/fonts/NanumPenScript-Regular.eot");
+  src: url("../renderer/resources/fonts/NanumPenScript-Regular.eot?#iefix") format('embedded-opentype'), url("../renderer/resources/fonts/NanumPenScript-Regular.woff2") format('woff2'), url("../renderer/resources/fonts/NanumPenScript-Regular.woff") format('woff');
+}
+@font-face {
+  font-family: ng;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../renderer/resources/fonts/NanumGothic-Regular.eot");
+  src: url("../renderer/resources/fonts/NanumGothic-Regular.eot?#iefix") format('embedded-opentype'), url("../renderer/resources/fonts/NanumGothic-Regular.woff2") format('woff2'), url("../renderer/resources/fonts/NanumGothic-Regular.woff") format('woff');
+}
+@font-face {
+  font-family: nanumBarunLight;
+  font-style: normal;
+  font-weight: 300;
+  src: url("../renderer/resources/fonts/NanumBarunGothicLight.eot");
+  src: url("../renderer/resources/fonts/NanumBarunGothicLight.eot?#iefix") format('embedded-opentype'), url("../renderer/resources/fonts/NanumBarunGothicLight.woff2") format('woff2'), url("../renderer/resources/fonts/NanumBarunGothicLight.woff") format('woff');
+}
+@font-face {
+  font-family: nanumBarunUltraLight;
+  font-style: normal;
+  font-weight: 200;
+  src: url("../renderer/resources/fonts/NanumBarunGothicUltraLight.eot");
+  src: url("../renderer/resources/fonts/NanumBarunGothicUltraLight.eot?#iefix") format('embedded-opentype'), url("../renderer/resources/fonts/NanumBarunGothicUltraLight.woff2") format('woff2'), url("../renderer/resources/fonts/NanumBarunGothicUltraLight.woff") format('woff');
+}
+@font-face {
+  font-family: nanumBarunRegular;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../renderer/resources/fonts/NanumBarunGothic.eot");
+  src: url("../renderer/resources/fonts/NanumBarunGothic.eot?#iefix") format('embedded-opentype'), url("../renderer/resources/fonts/NanumBarunGothic.woff2") format('woff2'), url("../renderer/resources/fonts/NanumBarunGothic.woff") format('woff');
+}
+@font-face {
+  font-family: nanumBarunBold;
+  font-style: normal;
+  font-weight: 700;
+  src: url("../renderer/resources/fonts/NanumBarunGothicBold.eot");
+  src: url("../renderer/resources/fonts/NanumBarunGothicBold.eot?#iefix") format('embedded-opentype'), url("../renderer/resources/fonts/NanumBarunGothicBold.woff2") format('woff2'), url("../renderer/resources/fonts/NanumBarunGothicBold.woff") format('woff');
+}
+@font-face {
+  font-family: notoSansRegular;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../renderer/resources/fonts/NotoSansKR-subset-Regular.eot");
+  src: url("../renderer/resources/fonts/NotoSansKR-subset-Regular.eot?#iefix") format('embedded-opentype'), url("../renderer/resources/fonts/NotoSansKR-subset-Regular.woff") format('woff');
+}
+@font-face {
+  font-family: notoSansMedium;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../renderer/resources/fonts/NotoSansKR-subset-Medium.eot");
+  src: url("../renderer/resources/fonts/NotoSansKR-subset-Medium.eot?#iefix") format('embedded-opentype'), url("../renderer/resources/fonts/NotoSansKR-subset-Medium.woff") format('woff');
+}
+@font-face {
+  font-family: notoSansBold;
+  font-style: normal;
+  font-weight: 700;
+  src: url("../renderer/resources/fonts/NotoSansKR-subset-Bold.eot");
+  src: url("../renderer/resources/fonts/NotoSansKR-subset-Bold.eot?#iefix") format('embedded-opentype'), url("../renderer/resources/fonts/NotoSansKR-subset-Bold.woff") format('woff');
+}
+@font-face {
+  font-family: NanumGothic;
+  font-style: normal;
+  src: local('Nanum Gothic'), url("../renderer/resources/fonts/NanumGothic-Regular.woff2") format('woff2');
+}
+@font-face {
+  font-family: 'yg-jalnan';
+  font-style: normal;
+  font-weight: 400;
+  src: local('잘난체 Regular');
+  src: url("../renderer/resources/fonts/JalnanOTF00.woff") format('woff');
+}
+@font-face {
+  font-family: 'UhBeemysen';
+  font-style: normal;
+  font-weight: 400;
+  src: local('어비 마이센체 Regular');
+  src: url("../renderer/resources/fonts/UhBeemysen.woff") format('woff');
+}
+@font-face {
+  font-family: 'designhouseOTFLight00';
+  font-style: normal;
+  font-weight: 400;
+  src: local('디자인 하우스체 Regular');
+  src: url("../renderer/resources/fonts/designhouseOTFLight00.woff") format('woff');
+}
+@font-face {
+  font-family: 'DungGeunMo';
+  font-style: normal;
+  font-weight: 400;
+  src: local('둥근모꼴 Regular');
+  src: url("../renderer/resources/fonts/DungGeunMo.woff") format('woff');
+}
+/*
+ * 용비어천가 (Korean) https://www.sandollcloud.com/font/Sandoll/107.html
+ */
+@font-face {
+  font-family: 'SDYongbi';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../renderer/resources/fonts/SDYongbi.woff") format('woff');
+}
+/*
+ * 목각 (Korean) https://www.sandollcloud.com/font/Sandoll/485.html
+ */
+@font-face {
+  font-family: 'SDWoodcarving';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../renderer/resources/fonts/SDWoodcarving.woff") format('woff');
+}
+/*
+ * 별이 샤방샤방 (Korean) https://www.sandollcloud.com/font/Sandoll/67.html
+ */
+@font-face {
+  font-family: 'SDShabang';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../renderer/resources/fonts/SDShabang-bMd.woff") format('woff');
+}
+/*
+ * 맵씨 (Korean) https://www.sandollcloud.com/font/Sandoll/513.html
+ */
+@font-face {
+  font-family: 'SDMapssi';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../renderer/resources/fonts/SDMapssi.woff") format('woff');
+}
+/*
+ * 코믹 스텐실 (Korean) https://www.sandollcloud.com/font/Sandoll/1509.html
+ */
+@font-face {
+  font-family: 'SDComicStencil';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../renderer/resources/fonts/SDComicStencil-aBasic.woff") format('woff');
+}
+/*
+ * 시네마극장 (Korean) https://www.sandollcloud.com/font/Sandoll/224.html
+ */
+@font-face {
+  font-family: 'SDCinemaTheater';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../renderer/resources/fonts/SDCinemaTheater.woff") format('woff');
+}
+/*
+ * 초록우산어린이 (Korean) https://www.sandollcloud.com/font/Sandoll/863.html
+ */
+@font-face {
+  font-family: 'SDChildfundkorea';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../renderer/resources/fonts/SDChildfundkorea.woff") format('woff');
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>엔트리</title>
+	<link rel='stylesheet' href='../../renderer/resources/styles/fonts.css'/>
+	<link rel='stylesheet' href='../../renderer/resources/styles/about.css'/>
+</head>
+
+<body>
+<div class="container">
+	<div class="container_inner">
+		<div class="logo_wrapper">
+			<img src="../../renderer/resources/images/about/logo.png" class="logo"/>
+		</div>
+		<div>
+			<div class="txtVersion">
+				Version
+				<span id="version"></span>
+				<br>
+				<a href="#" id="playEntryBtn">
+					https://playentry.org
+				</a>
+			</div>
+			<div>
+				<div class="btnVersionUpdate">
+				</div>
+				<div class="txtAlreadyVersion">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+    window.$ = window.jQuery = require('jquery');
+    const { shell } = require('electron');
+	const remote = require('@electron/remote');
+
+	(function () {
+		const { app } = remote;
+		const aboutWindow = remote.getCurrentWindow();
+		const currentVersion = remote.getGlobal('sharedObject').version;
+		const getLatestVersion = () => localStorage.getItem('lastCheckVersion') || '0.0.0';
+
+		const $versionUpdateButton = $('.btnVersionUpdate');
+		const $recentVersionText = $('.txtAlreadyVersion');
+
+		$(window).keyup((event) => {
+			//esc
+			if (event.which === 27) {
+				aboutWindow.hide();
+			}
+		});
+
+		$('body').on('click', function () {
+			aboutWindow.hide();
+		});
+
+		$('#playEntryBtn').on('click', function (e) {
+			e.preventDefault();
+			shell.openExternal('https://playentry.org');
+		});
+
+		$versionUpdateButton.on('click', () => {
+			shell.openExternal(
+					'https://playentry.org/#!/offlineEditor',
+			);
+		});
+
+		$('#version').text(currentVersion);
+
+		aboutWindow.on('show', () => {
+			const rawPersist = localStorage.getItem('persist:storage');
+			const currentLangType = rawPersist ? JSON.parse(JSON.parse(rawPersist).persist)['lang'] : 'ko';
+
+			window.Lang = require(`../../renderer/resources/lang/${currentLangType}.json`);
+			$versionUpdateButton.text(Lang.General.recent_download2);
+			$recentVersionText.text(Lang.General.latest_version);
+
+			if (currentVersion < getLatestVersion()) {
+				$recentVersionText.hide();
+				$versionUpdateButton.show();
+			} else {
+				$versionUpdateButton.hide();
+				$recentVersionText.show();
+			}
+		});
+	}());
+</script>
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+# common
+.DS_Store
+node_modules/
+out/
+cache/
+**/temp/
+dist/
+temp/
+
+# ide, framework or git
+.cache
+.idea
+.vscode
+
+# related to webpack or bower
+src/*_build
+
+# specifics
+build/*.exe
+*.log
